@@ -46,12 +46,14 @@
         display: block;
         margin: 0 auto 10px auto; /* Centers the logo and adds spacing below */
       }
-      pre {
-    white-space: pre-wrap; 
-    word-wrap: break-word; 
-    overflow-x: auto;
-    max-width: 100%;
+    pre {
+  white-space: pre-wrap; /* Allow long lines to wrap */
+  word-wrap: break-word; /* Break long words if necessary */
+  overflow-x: auto; /* Enable horizontal scrolling if content overflows */
+  max-width: 100%; /* Ensure the pre tag never exceeds the container width */
+  box-sizing: border-box; /* Include padding and border in the element's width */
 }
+
 
 
       header h1 {
